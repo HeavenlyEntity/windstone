@@ -9,6 +9,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogActions from '@mui/material/DialogActions';
 import Typography from '@mui/material/Typography';
 import Link from '../components/Link';
+import { Box } from '@mui/material';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -48,7 +49,7 @@ function Home() {
         <Typography variant="subtitle1" gutterBottom>
           with Nextron
         </Typography>
-        <img src="/images/logo.png" />
+        <img style={{ display: 'unset' }} src="/images/logo.png" />
         <Typography gutterBottom>
           <Link href="/next">Go to the next page</Link>
         </Typography>

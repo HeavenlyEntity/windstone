@@ -6,6 +6,7 @@ import { theme } from '../lib/theme';
 import { CssBaseline } from '@mui/material';
 import { CacheProvider } from '@emotion/react';
 import createEmotionCache from '../utility/createEmotionCache';
+import Navbar from '../components/Navigation/Navbar';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -16,10 +17,11 @@ const MyApp = (props) => {
       <Head>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
-      <CacheProvider value={emotionCache}>
+        <Navbar/>
+        <CacheProvider value={emotionCache}>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
           <Component {...pageProps} />
+          <CssBaseline />
         </ThemeProvider>
       </CacheProvider>
     </React.Fragment>

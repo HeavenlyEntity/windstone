@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="https://cdn.tailwindcss.com"></script>
         </body>
       </Html>
     );
